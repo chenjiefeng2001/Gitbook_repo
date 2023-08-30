@@ -1,5 +1,6 @@
 {
     "yaml.customTags": [
         "!script"
-    ]
+    ],
+    "nvidia-smi-plus.refresh.autoRefresh": false
 }
