@@ -16,6 +16,12 @@ description: 欢迎来到我的个人主页，以下是我的一些个人笔记�
 [Pbrt V4 源码解析](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/xTiugZsJ5V6HWCz0DpU9/)
 {% endcontent-ref %}
 
+## Lusia Compute源码解析：
+
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/iTJcU1MBpu38HcRvjT4S/" %}
+[LusiaCompute 源码解析](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/iTJcU1MBpu38HcRvjT4S/)
+{% endcontent-ref %}
+
 ## 游戏设计笔记
 
 {% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/uhq6GaOzCc82Ni5kKWgo/" %}
@@ -52,3 +58,28 @@ description: 欢迎来到我的个人主页，以下是我的一些个人笔记�
 [UE5学习笔记](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/MFlwz6nK1psjTRM40eJl/)
 {% endcontent-ref %}
 
+## Unity开发笔记
+
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/TlNRRBivTQUhtUoEjBQ2/" %}
+[Unity 游戏开发笔记](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/TlNRRBivTQUhtUoEjBQ2/)
+{% endcontent-ref %}
+
+## 游戏引擎开发：
+
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/lKpnSOcbDf9Y4yTI75p8/" %}
+[从零开始的游戏引擎开发](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/lKpnSOcbDf9Y4yTI75p8/)
+{% endcontent-ref %}
+
+## TCPIP详解
+
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/j0LL33FUPnaatNHWyk8e/" %}
+[TCPIP Illustrate](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/j0LL33FUPnaatNHWyk8e/)
+{% endcontent-ref %}
+
+<img src=".gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+## 读书笔记：
+
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/tlknLKfsljFlEiWPsvhR/" %}
+[读书笔记](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/tlknLKfsljFlEiWPsvhR/)
+{% endcontent-ref %}
