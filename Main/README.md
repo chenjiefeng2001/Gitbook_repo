@@ -78,8 +78,8 @@ description: 欢迎来到我的个人主页，以下是我的一些个人笔记�
 
 ## 计算机组成原理
 
-{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/PNpW6WMfyBCgn02Ypm2E/" %}
-[Computer\_Architecture\_And\_\_Organization\_Design](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/PNpW6WMfyBCgn02Ypm2E/)
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/LsFkETgXA4GD7fr4Es2W/" %}
+[计算机组成原理](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/LsFkETgXA4GD7fr4Es2W/)
 {% endcontent-ref %}
 
 <img src=".gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
