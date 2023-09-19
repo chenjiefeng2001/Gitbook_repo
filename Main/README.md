@@ -76,6 +76,18 @@ description: 欢迎来到我的个人主页，以下是我的一些个人笔记�
 [TCPIP Illustrate](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/j0LL33FUPnaatNHWyk8e/)
 {% endcontent-ref %}
 
+## Foundations of Games Engine&#x20;
+
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/Evvkd3Wchx6YDceE08HE/" %}
+[Foundations of Games Engine Developments](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/Evvkd3Wchx6YDceE08HE/)
+{% endcontent-ref %}
+
+## Game Engine Gems&#x20;
+
+{% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/AxxlcRGJD8FV5lWDMw7Q/" %}
+[Game Engine Gems 3](http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/AxxlcRGJD8FV5lWDMw7Q/)
+{% endcontent-ref %}
+
 ## 计算机组成原理
 
 {% content-ref url="http://127.0.0.1:5000/o/Uqb0Ex06F8S5J0dqLtk6/s/LsFkETgXA4GD7fr4Es2W/" %}
