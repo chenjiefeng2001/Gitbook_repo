@@ -4,6 +4,8 @@
 
 CMake是一个开源的C++构建工具，
 
+原文地址：[Introduction · Modern CMake (modern-cmake-cn.github.io)](https://modern-cmake-cn.github.io/Modern-CMake-zh_CN/)
+
 > ## CMAKE基础行为准则(应该避免此类行为)
 >
 > 1. **不要使用带有全局作用域的函数**，例如 `link_directories`、 `include_libraries` 等相似的函数。
@@ -22,3 +24,39 @@ CMake是一个开源的C++构建工具，
 > 6. **将常见的功能合并到有详细文档的函数或者宏中**
 > 7. **使用小写的函数名**:CMake 的函数和宏的名字可以定义为大写或小写，但是一般都使用小写，变量名用大写。
 > 8. **使用 `cmake_policy` 和/或 限定版本号范围**
+
+### 变量与缓存
+
+#### 本地变量
+
+声明本地变量：
+
+```cmake
+set(VARIABLE "value")
+```
+
+变量名通常使用大写。可以通过 `${}`来解析一个变量。CMake 有**作用域**的概念，在声明一个变量后，你只可以在它的作用域内访问这个变量。如果你将一个函数或一个文件放到一个子目录中，这个变量将不再被定义。
+
+当然，还可以声明一个列表：
+
+```cmake
+set(LISTS "value1" "value2")
+```
+
+当然也可以通过 `;`进行分隔
+
+```cmake
+set(LISTS "value1;value2")
+```
+
+有一些和 `list(`进行协同的命令，`separate_arguments`可以把一个以空格分隔的字符串分隔成以列表。**值得注意的是，在CMake中如果一个值没有空格，那么加和不加引号的效果都是一样的**
+
+> 当一个变量用 `${}` 括起来的时候，空格的解析规则和上述相同。对于路径来说要特别小心，路径很有可能会包含空格，因此你应该总是将解析变量得到的值用引号括起来，也就是，应该这样 `"${MY_PATH}"` 。
+
+### 缓存变量
+
+在CMake中提供了一个缓存变量来允许你在Command Line中对于该变量进行设置。如果一个变量还没有被定义，那么你可以使用以下的声明方法来设置：
+
+```cmake
+set(Cache_Value "VALUE" CACHE STRING "Description")
+```
