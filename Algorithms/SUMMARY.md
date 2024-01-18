@@ -7,4 +7,4 @@
 - [5.最长回文字符串](./StringQuesion/Quesion5.md)
 - [6.之字形转换](./StringQuesion/Quesion6.md)
 - [7.反向整数](./NumericalQuesion/Quesion7.md)
-- [8.字符串转为整数](./StringQuesion/Quesion8.md)
+- [8.字符串转为整数](./NumericalQUesion/Quesion8.md)
