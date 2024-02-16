@@ -113,6 +113,14 @@ void main(VS_INPUT input)
  	float4 pos = mul( float4(cpos,1), InvCompressionTransform );
 }
 ```
+### Displacement Comprehension
 
+The displacement comprehenison is a techniques called by *Tom FOrsyth* -- which is a complete techniques chains includes patch rendering,displacement mapping and subdivision surface that any vertex shader-capable hardware can do and is a powerful form of geometry comprehension.
+
+### N- Patches
+
+N-Patches are a type of bicubic patch where the control points are determined from a triangle's positions and normals. N-Patches come into two variations, both with cubic interpolated linearly and quadratically.
+
+The algorithms calculatates the control points for the patch and then evaluates at each point on the base triangle.
 
 
