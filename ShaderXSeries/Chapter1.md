@@ -113,14 +113,35 @@ void main(VS_INPUT input)
  	float4 pos = mul( float4(cpos,1), InvCompressionTransform );
 }
 ```
+
+
+
 ### Displacement Comprehension
 
-The displacement comprehenison is a techniques called by *Tom FOrsyth* -- which is a complete techniques chains includes patch rendering,displacement mapping and subdivision surface that any vertex shader-capable hardware can do and is a powerful form of geometry comprehension.
+A series of techniques that includes patch rendering, displacement mapping, and subdivision surfaces that any vertex shader-capable hardware can do and is a powerful form pf geometry comprehension.
 
-### N- Patches
+Usually tessellation levels are decided by the CPU, as we currently have no programmable tessellation hardware, but there are a few fixed-function hardware tessellation systems that you may be able to use. This is the technique’s major limitation — to a limited degree, we can remove triangles (by sending the vertices to be clipped), but we cannot add triangles.
 
-N-Patches are a type of bicubic patch where the control points are determined from a triangle's positions and normals. N-Patches come into two variations, both with cubic interpolated linearly and quadratically.
+By using the vertex shaders as a function evaluator with the vertex stream bringing in the function parameters.
 
-The algorithms calculatates the control points for the patch and then evaluates at each point on the base triangle.
+There are two components that are needed for displacement comprehension:
 
+- **Displacement mapping**: 	A method of retrieving a scalar displacement along  the surface normal. Without it, your displacement comprehension becomes standard surface patch 
 
+- **Surface basis**: 	Every displacement compression shader requires a basis system that defines the base surface before displacement. The simplest is just planar, although it could be as complex as a subdivision surface.
+
+### Displacement Mapping
+
+Displacement mapping has at least four ways to get the displacement  value into the vertex shader. The more advanced methods require explicit hardware support and are not cov ered here. 
+
+ The technique presented here works on any vertex shader hardware by **treating the displacement map as a 1D vertex stream**. It’s a generalization of the technique that I presented in Direct3D *ShaderX*, which had an implied planar basis that with a few minor modification works for any surface basis
+
+In the vertex stream the displacement value is stored explicitly. If kept in a separate stream, it can be accessed via the CPU as a standard displacement map, or you can choose to pack it with other vertex elements.
+
+### Pre-Filtering Displacement Maps
+
+One form of filtering that can be used with vertex stream displacement is to store the displacement value that would occur at the lower tessellation levels with the usual displacement value.
+
+>  If you store displacement values in UBYTE4, you could pack three lower lev els in the other three channels, which gives you an effective linear mip filter (but with point min/mag filter).
+>
+> 
